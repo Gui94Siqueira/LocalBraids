@@ -1,6 +1,6 @@
 # Localizador de Trancistas por Região
 
-![LocalBraids](/LocalBraids/assets/imgs/logo.png)
+![LocalBraids][def]
 
 Bem-vindo ao Localizador de Trancistas por Região, um projeto que visa ajudar as pessoas a encontrar profissionais qualificados para serviços de tranças em suas áreas locais. Se você está buscando um novo estilo de trança ou deseja manter suas tranças impecáveis, nossa plataforma é a solução perfeita para suas necessidades.
 
@@ -42,3 +42,6 @@ Obrigado por visitar o Localizador de Trancistas por Região. Esperamos que noss
 
 [Site do Localizador de Trancistas](https://localBraids.com)
 
+
+
+[def]: /LocalBraids/assets/imgs/logo.png
