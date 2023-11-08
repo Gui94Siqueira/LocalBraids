@@ -1,6 +1,6 @@
 # Localizador de Trancistas por Região
 
-![Localizador de Trancistas](imagem.png)
+![LocalBraids](/LocalBraids/assets/imgs/logo.png)
 
 Bem-vindo ao Localizador de Trancistas por Região, um projeto que visa ajudar as pessoas a encontrar profissionais qualificados para serviços de tranças em suas áreas locais. Se você está buscando um novo estilo de trança ou deseja manter suas tranças impecáveis, nossa plataforma é a solução perfeita para suas necessidades.
 
@@ -27,18 +27,18 @@ Se você é um trancista ou deseja contribuir para o projeto, existem várias ma
 O Localizador de Trancistas por Região é construído com as seguintes tecnologias:
 
 - Frontend: HTML, CSS, JavaScript
-- Backend: Node.js, Express
-- Banco de Dados: MongoDB
-- Hospedagem: Heroku
+- Backend: PHP.
+- Banco de Dados: Myslq
+- Hospedagem: LocalWeb
 - Controle de Versão: Git e GitHub
 
 ## Como Começar
 
-1. Para começar a usar o Localizador de Trancistas por Região, visite [nosso site](https://seusiteaqui.com).
+1. Para começar a usar o Localizador de Trancistas por Região, visite [nosso site](https://localBraids.com).
 
 2. Navegue pelos trancistas disponíveis na sua região, explore seus perfis e entre em contato diretamente com o trancista da sua escolha para marcar um horário conveniente.
 
 Obrigado por visitar o Localizador de Trancistas por Região. Esperamos que nossa plataforma o ajude a encontrar os melhores profissionais para atender às suas necessidades de trança. Se você tiver alguma pergunta ou feedback, sinta-se à vontade para entrar em contato conosco.
 
-[Site do Localizador de Trancistas](https://seusiteaqui.com)
+[Site do Localizador de Trancistas](https://localBraids.com)
 
