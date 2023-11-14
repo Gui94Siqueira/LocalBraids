@@ -15,7 +15,7 @@ body {
 header {
     width: 100%;
     display: flex;
-    text-align: center;
+    align-items: center;
     justify-content: space-between;
     height: 70px;
     background-color: #efefef;
@@ -23,24 +23,22 @@ header {
     box-sizing: border-box;
 }
 .logo {
-    margin-top: 10px;
     margin-left: 4rem;
 }
-.logo img {
-    width: 190px;
+
+.logo h2 {
+    color: #724334;
+    font-family: 'Abril Fatface', serif;
 }
 
-header {
-    display: flex;
-    align-items: center;
-}
 header ul {
     display: flex;
-    align-items: center;
     list-style-type: none;
     gap: 10px;
+    margin-top: 13px;
     margin-right: 4rem;
 }
+
 
 #menu li a {
     color: #724334;
@@ -50,6 +48,7 @@ header ul {
     text-transform: uppercase;
     font-weight: 500;
 }
+
 #menu li a:hover {
     background-color: #fff;
     color: brown; 
@@ -64,20 +63,15 @@ header ul {
     display: none;
 }
 
-
-main {
-    max-width: 1440px;
-
-}
 .containerHome {
-    height: calc(100vh - 70px);
-    background-color: #724334;
+    width: 100%;
+    max-height: calc(100vh - 70px);
 }
 
 .containerLeft img {
     position: relative;
-    width: 100%;
-    height: calc(100vh - 70px);
+    min-width: 100vw;
+    max-height: calc(100vh - 70px);
 }
 
 
@@ -87,10 +81,10 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 90%;
+    width: 100%;
     height: 100%;
-    margin-left: 5rem;
-    
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 .containerSlogan h1 {
@@ -111,8 +105,11 @@ main {
 }
 
 #cadastro {
+    width: 100%;
     height: 100%;
     text-align: center;
+    margin-bottom: 0;
+    padding: 0;
 }
 
 .cards {
@@ -157,19 +154,14 @@ main {
 
 }
 
-#cadastro {
-    margin-bottom: 0;
-    padding: 0;
-}
 
 .botao {
     background-color: #ff7b00;
     color: #fff;
     text-transform: uppercase;
     border-radius: 30px;
-    padding: 10px;
+    padding: 5px 20px;
     margin-top: 70px;
-    width: 200px;
     font-size: 1.5rem;
     border: none;
 }
@@ -272,8 +264,9 @@ main {
 }
 
 .apresentacao {
-    width: 50%;
+    width: 70%;
     margin-right: 50px;
+    margin-left: 4rem;
 }
 
 .apresentacao p {
@@ -317,6 +310,80 @@ main {
     text-align: center;
 }
 
+#login {
+    width: 100%;
+    height: calc(100vh - 160px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#login h2 {
+    color: #724334;
+    margin-top: 50px;
+    font-family: 'Abril Fatface', serif;
+    font-weight: 400;
+    font-size: 2.2rem;
+
+}
+
+.container_login {
+    margin-top: 30px;
+    width: 500px;
+    display: flex;
+    border: 2px solid #ff7b00;
+    border-radius: 20px;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #ff7b00;
+    border-radius: 5px;
+}
+
+.input::placeholder {
+    color: #ff7b00;
+    font-size: medium;
+}
+
+.container_login {
+    display: flex;
+    text-align: center;
+}
+
+.container_login input[type=submit] {
+    padding: 10px 20px;
+    margin-top: 50px;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    background-color: #ff7b00;
+    font-size: large;
+}
+.container_login input[type=submit]:hover {
+    background-color: #ca9c70;
+}
+
+.container_checked {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    color: #724334;
+}
+
+
+.container_checked a {
+    text-decoration: none;
+    color: #724334;
+}
+
+.container_checked a:hover {
+    text-decoration: underline;
+}
 footer {
     width: 100%;
     background-color: #724334;
@@ -409,6 +476,7 @@ footer li a:hover {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         width: 100%;
         height: 50%;
         visibility: visible;
@@ -421,6 +489,7 @@ footer li a:hover {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         margin: 0;
         padding: 0;
         position: absolute;
@@ -441,6 +510,21 @@ footer li a:hover {
         flex-wrap: wrap;
     }
   }
+  @media screen and (max-width: 763px) {
+    .containerSlogan {
+        justify-content: start;
+        top: 150px;
+    }
+    
+    .containerSlogan h1 {
+        font-size: 2rem;
+    }
+
+    .botao {
+        font-size: 1rem;
+        padding: 5px 10px;
+    }
+  }
 
   @media screen and (max-width: 550px) {
     #btn-responsivo {
@@ -456,20 +540,43 @@ footer li a:hover {
         font-size: 2rem;
     }
     .botoes {
-        flex-direction: column;
-        margin-top: 40px;
+        width: 100%;
+        margin-top: 30px;
     }
 
-    .botoes button {
-        margin: 0;
-        font-size: medium;
+    .containerSlogan h1 {
+        font-size: 1.2rem;
     }
+
+    .botao {
+        font-size: 1rem;
+        padding: 5px 10px;
+        margin: 0;
+    }
+
+    .container_login {
+        width: 90%;
+        border: none;
+        margin: 0;
+    }
+
+    .container_checked {
+        flex-direction: column;
+    }
+
+
 
     footer {
         display: flex;
         flex-direction: column;
         margin-top: 40px;
         height: 100%;
+    }
+  }
+
+  @media screen and (max-width: 366px) {
+    .botao {
+        font-size: 1rem;
     }
   }
 

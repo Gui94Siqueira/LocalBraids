@@ -8,3 +8,12 @@ function toggleMenu() {
 
 btnMobile.addEventListener('click', toggleMenu);
 navMenu.forEach(n => n.addEventListener('click', toggleMenu));
+
+
+
+const myCarouselElement = document.querySelector('#myCarousel')
+
+const carousel = new bootstrap.Carousel(myCarouselElement, {
+  interval: 2000,
+  touch: false
+})

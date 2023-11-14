@@ -6,149 +6,176 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>localBraids</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
-    
-        <header>
-            <div class="logo">
-                <img src="assets/imgs/logo.png" alt="">
-            </div>
-            <div id="menu">
-                <button id="btn-responsivo"><span class="hamburger"></span></button>
-                <ul>
-                    <li><a href="#" class="nav-menu"><i class="fa-solid fa-house"></i>Login</a></li>
-                    <li><a href="#" class="nav-menu"><i class="fa-regular fa-user"></i>Cadastre-se</a></li>
-                    <li><a href="#" class="nav-menu botao1"><i class="fa-solid fa-file-lines"></i>Publique seu trabalho</a></li>
-                </ul>
-            </div>
-        </header>
-        <main>
-        <section>
-            <div class="containerHome">
-                <div class="containerLeft">
-                    <img src="assets/imgs/banner.png" alt="">
-                    <div class="containerSlogan">
-                        <h1>encontre Trancistas em poucos cliques </h1>
-                        <div class="botoes">
-                            <button class="botao">cadastre-se</button>
-                            <button class="botao">login</button>
+
+    <header>
+        <div class="logo">
+            <h2>localBraids</h2>
+        </div>
+        <div id="menu">
+            <button id="btn-responsivo"><span class="hamburger"></span></button>
+            <ul>
+                <li><a href="pages/login.html" class="nav-menu"><i class="fa-solid fa-house"></i>Login</a></li>
+                <li><a href="#" class="nav-menu"><i class="fa-regular fa-user"></i>Cadastre-se</a></li>
+                <li><a href="#" class="nav-menu botao1"><i class="fa-solid fa-file-lines"></i>Publique seu trabalho</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section>
+        <div class="containerHome">
+            <div class="containerLeft">
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/imgs/bainer4.jpg" class="d-block w-100" alt="...">
                         </div>
+                        <div class="carousel-item">
+                            <img src="assets/imgs/bainer5.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/imgs/bainer3.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <div class="containerSlogan">
+                    <h1>encontre Trancistas em poucos cliques </h1>
+                    <div class="botoes">
+                        <button class="botao">cadastre-se</button>
+                        <button class="botao">login</button>
                     </div>
                 </div>
             </div>
-        </section>
-        <section id="cadastro">
-            <div class="cards">
-                <div class="card1">
-                    <div class="logoCard">
-                        <svg width="121" height="121" viewBox="0 0 121 121" fill="none"
-                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <rect width="121" height="121" fill="url(#pattern0)" />
-                            <defs>
-                                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                                    <use xlink:href="#image0_68_110" transform="scale(0.00390625)" />
-                                </pattern>
-                                <image id="image0_68_110" width="256" height="256"
-                                    xlink:href="data:image/png;base64,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" />
-                            </defs>
-                        </svg>
+        </div>
+    </section>
+    <section id="cadastro">
+        <div class="cards">
+            <div class="card1">
+                <div class="logoCard">
+                    <svg width="121" height="121" viewBox="0 0 121 121" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <rect width="121" height="121" fill="url(#pattern0)" />
+                        <defs>
+                            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_68_110" transform="scale(0.00390625)" />
+                            </pattern>
+                            <image id="image0_68_110" width="256" height="256"
+                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAYAAABccqhmAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAABVSSURBVHic7d1djFzlfcfx73/Ga5BK7Z21sRVQkwjHJkCTOCmtKrCqEF6SQJLSpNikFNq4KZGCRKQo2GO7F74I3vVazUUuIkUkpa1EKuwEmSZA22CbvEClQsiLCIWERC0NaWzYnfWCVeP1zL8XswPLenfn5Tzn/fe5xHOeeYzn/5vn/5wz5xiSON9PlV/UNmPcBH4p2Grwl8CewLmHdY39tplm2vOU4rO0J1A2PrribVj1XuA9S7zsSby5xXZMP5fUvKScFAAJmi3+x4Bze3j5i3jzMoWAxKmS9gTKwvdTnf3m76X4Ac7Fqvf6fqpxzkvKTQGQlF/UNrP0sn8h75k9TiQWCoCkGDclepxIDxQAifFLkz1OpDsFQGJsdbLHiXSnAEjOoJt52gSU2CgAREpMASBSYgoAkRJTAIiUmAJApMQUACIlpgAQKTEFgEiJKQBESkwBIFJiCgCRElMAiJSYAkCkxBQAIiWmABApMQWASIkpAERKbFlab+yOsa+2Cff34rwFt1cx/xneekD3wi++9jMSKtfhtgHzszD+G7NHuKPxfTM87fmVRSoPBvE9tcsxvoTxzoX+GPw+bNnttv2lXyc+uZj4WG3gD7XVG4V5gIvvXX0efvqLYB9loc+f8xOcT9vOxqPJz658Em8BfGz4FiocWaT4AQzsY3jzcR8bfleik5NY+djwu/Dm42AfY7EvH+OdVDjiY8O3JDu7cko0AHxP7XKwrwBDPbz8PLBDCoFiaP872iHgvB5ePgT2lfbnReKUWAC4Yxhforfi71ilEMi/OcW/qo/DhjC+5K7nV8YpuRXA3trlSyz7l6IQyLEBi7/NeCd7tQqIU4ItgL8vwsEKgRyKVPyvjxLlcyNdJLkH8OaIxysEciRM8QPRPzeyhAQDwE4FGGQV2BHfu1LPy8uw2eJ/mOjFD26vRp+RLCbJFuDZQAPV8Mq/KQSyaU7xh3mmYSXY50YWkFwAVFoPQrArvGp45V/UDmTLnGV/qAeaOtZ6KNBYsoDEAsC2Tf8c/L6AQ2pPIEMC9vxzR72v/bmRuCR7JaAtux0IeXmvQiAD4il+fj37eZEYJRoA7Wv7/VpgIuCwCoEUxVT8E+DXFum3IFmV+G8BrD71Y/ArgZcCDquzAykIutv/ugbeen/7cyJxS+V+ALMhcBVhQ0BnBxIUfLe/rYG3rrYdx38QcExZQmo3BFEI5JeKvzhSvSOQQiB/VPzFkvotwRQC+aHiL57UAwAUAnmg4i+mTAQAKASyTMVfXJkJAFAIZJGKv9gyFQCgEMgSFX/xZS4AQCGQBSr+cshkAIBCIE0q/vLIbACAQiANKv5yyXQAQKFCoJnwcX1T8ZdP5gMAihICPuDcBz2uz3dR8ZdSLgIAihAC9kSyx/VOxV9euQkAyHkIOPckelyvw6v4Sy1XAQA5DoF1jf3Ak30e9eTscbFQ8UvuAgDyGQK2mSbe3AK82OMhL+LNLbY5nk1AFb9ATgMAchoCO6afw5uX0X0l8CTevMx2TD8XxzxU/NKR+wcvxvZhttY1tv14LBtwvp8qv6htxrgJ/FKw1e3dfnsC5x7WNfbrm1+SkPsAgBhvTNmqbLKdE88EHDNVvmfV26m0vk/4G3heqXv45VNuW4C55txoNOzdhiutg777rWcHHDM1vvutZ1NpHUTFL3MUIgAgthC4kLOmbws4Xnraf48LA46o4i+AwgQAxBQC5luDjZWmsH8PFX9BFGIPYL7AewKOt1bZjuONAGOlwkdX1rDKBGH+vVX8BVKoFUBH4JWA4cvWBhgnPe35q/jlDIUMAAgcAi0/EX1GKQozfxV/ARU2ACDYY8gmOT35Qqg5pWLX5K+IFoR6XFdBFToAIMAVg8bXbTetsLNKlhkODPpodl3kU2CFDwB4Qwj0+y14klZzXxxzSpw3x4GTfR41AX6Fir+4ShEAMOiegN0e1/X4SWv/Pez2Pg5Rz18CpQkAmA2BVmUT8GyXl54Eu9Xqk3clMa+ktP8+divdVwLP0qpsUvEXX6kCAMB2TjzDyZUbcfsc8NN5fzwB3IU331G04u+w+uRdePMdwF2cuRr6KW6f4+TKjUX6DYQsrpAXAvXDR1fW8GVrqforbJt8YXbDrBTcMcZHzqdp52Cnj+b5YicRERERERERERERERERERERERERERERERERERERERERkaJ4ww1BFnhs9Zr5r8kBBz+WxKO2RfLuteL20RVvw6r3Au9JcT5xeBJvbsnyzT3986vOp8pFWOss8F9xwdRTCi1JgsFrxf8YcG7K84nLi3jzsqyFgI+O3ICxHfz35v3RJPhBvHKAkclD9ilmUpmgFJ75fqr8svYfFO+bf74nuaDxB1n4ZvUvchb/V7sb5+M9vFxhILExH619HONraU8kEc6f2Y7GP6U+jb21r/VY/PMpDCQo87Hat4Dr0p5IQh6weuNDaU7A9478Ke4HAgylMJDIls3u9qc9j4T4pWnPAPcdgUYaAduK+VYatUkfUxhI/8zHaqeAobQnkpAZqzeWp/Xm/vlV57Os9auY36aB8y2MA5xs/Kvt5lTM7yc5tgx8Emxt2hNJhk+m+vZDfnECjx2pYdwM3MzZtYaPKgxkcRWwJ9KeRHJS/ru6J7366ITBP3N27X99bPirPjryAf9yaVZ80kUF5560J5GYtP+uVf4nxXfv7Bk8RKP2G4WBgK4DSNTs/+tjwEhac1iAziaUmK4ETJiPDX8VbGva81iENhBLRr8FSJiPjnwA84fSnkcPFAYloF8DJsy/zBCN2m/IVhvQjcKgoPJW3IWQ8TagG4VBgSgAUpCjNqAbbSDmnAIgBTltA7rRyiCHFAApyXkb0I3CICcUACkpUBvQjcIgwxQAKSloG9CNwiBjFAApitwGmG/F7W1gN4CvDzi1JGgDMQMUACkK0AbssXpjF4CPjVyCcwPmW4C3h5lhYrQySIkCIEUB2oBfWr2x7oxxFQbSIwVAyiK3ARV/t22b+tHi4ysMZHEKgJSFbAO6vpfCQOZRAKQsrjag6/sqDAQFQCbE3QZ0f3+FQVkpADIgyTag61wUBqWiAMiAtNqAbhQGxacAyIi024BuFAbFVPoA8NGVNXzZWqr+CtsmXzBL4MbdC84jO21ANwqD4ihlAPjut57NWdO3Yf4J4JI5fzQB3Ic3x5O+hVhW24BuFAb5VroA8D2r3k6ldRC4cImXnQS73eqTdyU1L8h+G9CNwiB/ShUAPjb8LrBDwKrejrBbkwyBPLUB3SgM8qE0AdB/8QNwEm++I6l2IK9tQDcKg+wqRQDMFv/DwOoBDr/L6o1bQ89pMXlvA7pRGGRL4QMgYvEDTHKyca7tphVyXospUhvQjcIgfYUOgAGX/Wc6bW+2v5lM5Ll+RW0DulEYpKOwARCs+AFalYts58Qz0WfVm6K3Ad0oDJJTyAAIWvzgeGuV7TjeCDBWb29YojagG4VBvAoXAIGLH+Bpqzcu6f6ycMraBnSjMAivUAEQQ/GD2+dsx+TfBhuv17cteRvQjcIgjMIEQCzFD89ycuVG2/1fJwOO2RO1Ab1TGAyuEAEQU/FP0KpsSnLzb67obYD93OqTG4JOKgd8fHgjLbsh17dKb1W+Yjsn/z2JN8x9AAQ4z7+QBt662nYc/0HAMfumNiCanIfBQZY3/8o+Oz0Z55tU4hw8bkUu/jb7eqTDW3ZDoInkkm2b+pHVG7usPrmBir8b2AP287Tn1aPrOVV91Pf8dshV7RlyuwIofvGrDYhLzlYGD1i98aG4Bs9lAJSh+DvUBsQrF2Fgrats+/FDcQyduxagTMXfpjYgTrloE7xyS1xD52oFUL7iVxuQlmytDOL7N8xNAJSx+DvUBqQrA2EwZfVGLY6Bc9EClLn429QGpCkDbcJ0XANnPgBU/ECt8TAQ4XywAiCUlMLgh3ENnOkWQMX/OrUB2fZam2DcjPM7gYe/yeqNrwUeE8jwCkDFP49XDkQ6Xm1ArGzb1I+oNP8eD1xTxlPUGtH+7ZeQyQBQ8S9gZPIQagMyy/es3kCr+ghwfsBhj+N2o32KmYBjvkHmAkDFv7D2h8APDj6Cr/fx4Y3hZiQdPr5iPZXmYeC8gMOeAP+I1Sd/GnDMM2QqAFT83ehsQNbE9M0/DXaN1ae+G3DMBWUmAFT8PYh8NoAbQ01FYv3m/7DVJx8LOOaiMhEAKv7eRG8DuEBtQBg+vmI9reoRwn7znwC/Nolv/o7UA0DF3yedDUhdUYofUg4AFf8AIp8NUBsQRZGKH1IMABX/YNQGpKdoxQ8pBYCKPyK1AYkrYvFDCgEw5waeIYt/AvyKUhQ/qA1IWFGLHxIOAN+7+jywBwl99178SqtP/TjgmJmmNiA5RS5+SHoF4Ke/SNhzpqUr/teoDYhd0YsfEgwAH1+xHuyjAYcsb/GD2oCYlaH4IckVQKtyLeF+ftzAW+8vbfGjNiBOZSl+SDIAzEI9sqk8u/3dqA0IrkzFD0kGgPtQgFHKtdvfTfQ2YEuoqRRBbMVf8euyWPyQ7Cbg8xGPL3fPv4B2G2D3RxhindqAttnif4Q4ftW3beo7AccMKsEAsMMRDlbxL8rVBkTkX1gxQqv6EGHPUE2DfTCpX/UNKrkA2N54FOcnAxyp4l+Kbhga3Ux1FFgXcMRcFD8kGABmOM6noa/bG6n4u4jeBpT7TkG+75w1OH8ZcMjcFD8kfCGQ7Ww8Cv5JeguBX6v4e6U2YGCtoauB5YFGy1XxQwq/BbD61D/S4ool2gEH/wZW/X0Vf4+i3ymovGcDWnZhoJFOUPGP5Kn4AZal8aa2s/GoOxvZV9uE+3tx3oLbq5j/DG89YDumn0tjXnlln2LGx+x+8E8MOMQ6Hx/eWM7nBnigGvAXmFn+TJixkpNKAMDsngCN7wHfS2sOxeIHgEEDoNMGlDAAIp+enmUbqM4c9jvXvM92HTsaZsz4pX5LMAlEZwMGU6keCTjaxbMhsDbgmLFSABSEzgYMxra/9Cz4wwGHzFUIKAAKRWcDBtKqfAY4EXDE3ISAAqBI1AYMxHZOPg18nP6uUekmFyGgACgQtQGDs3rjm7S4Hng14LAXU535jt+5+k0BxwxKAVA4agMGZTsbD9Lio4QNgQupNo9kNQQUAEWji4IiKVsIKAAKRj8Rjq5MIaAAKCS1AVGVJQQUAEWkNiCIMoSAAqCA1AaEU/QQUAAUltqAUIocAgqAolIbEFRRQ0ABUFBqA8IrYggoAApNbUBoRQsBBUCRqQ2IRZFCQAFQYGoD4lOUEFAAFJ7agLjEGgJ7V4d8RsGiFABFpzYgVrGFgDcPJxECCoCCUxsQvzyHgAKgFNQGxC2vIaAAKAO1AYnIYwhYHINK9vjYyN9FeG4AVPzdST03wPeds4bm0DVg62cfK/88Xj1sO1/6WRLvH5XvHb4et3sJ98QhgKdpDgW/5bgCoCR8rPZB4MEIQ+yxemNXqPksxL+wYoRT1THgL1iwePzbWPUztn3iP+OcRwh5CQG1AGWR8RuG+viK9ZyqPg78NYsWjV2Ntx738dqH4pxLCLZ96iDmW4BTAYcNfqNRBUBJZPmGoT6+Yj2t6hHggh5e/lu0uM/3Dl8fx1xCsu1TB2nxJ8Rxo9FAewIKgFLJ3tmAOcV/fh+HDeG2PxchkPGNQQVAmWTsbMCAxd+hEAgQAgqAEsnSRUERi79DIRAxBBQApZN+G+B7Vm+gVX2EaMXfMYTbvT42/McBxoqV7Ww8iPmNhN0YvBBvfnvQjUEFQNmk3Ab4+Ir1VJqHgZAXtiwHO5CLlUDGNgYVACWTZhsQaNm/GLUDA7QDCoBSSr4NiLn4OxQCfYaAAqCMEm4DEir+DoVAHyGgACihJNuAhIu/QyHQYwgoAEor/jYg8G5/v3R2wJsPdzs7oAAoq5jbgJh2+/tV9rMDF3U7O6AAKKk424CUlv2LUTuwRDugACi18G1Axoq/QyGwSAgoAMoscBuQ0eLvUAgsEAIKgBIL2QbEtOE3DR7yLkDaGJy3MagAKL3obYDvWb2BSvMIYTf8psE+SHP5HwEh7wC0HGx/LkJg+9RB8M2EDYGLqM4c9tGVNVAASPQ24M/jKn6rTz5mu44dpTl0BWUNgfrU/TGEwMVY5R9A9wQUAtwwNKzXin/uf/Q716ylOnMEuCjge50C39wusmxrh5XtJ+Q9Bs2u0QpAiNwGhLNg8QNoJRDDSsB9qwJAQrQBISxa/B0KgcAhYFyuAJAQZwOi6lr8HQqBqftxuy3IYM5aBYDMSq0N6Ln4O8ocAn7nmrWYfzbQcCcUANKWThtwAvzD/RR/h+06dpTqzHsxngo4n0z/dsD3nbOG6swhwm2E/lgBIEAqbcAJKn6d1ae+O+gAdscrx6jMXBk4BDJ5xeDs49IOA5cEG9T4hgJA5kisDZgGu8a2TX0n6kB2xyvHOD10FWHbgUxdMeh3rllLc+gRQhY/PE9l+d0KAHldMm1A3z1/N0XeE4jp+odXwW+2O45qD0Bel0AbcIKKfyRk8XcUcU8ghp4fYAbzGzutlwJA5omtDWj3/AGW/Ysp0p5ALD1/u/g3t39j0KYAkDeKpw0I1vN3U4Q9gZh6/lPgN8wtflAAyDwxtAGxLfsXk+d2IMZl/5aFfvOgAJAFBGsDXk7qm3++PK4Ekvzm71AAyJnCtAEnqAx2kU8oeVoJJP3N36EAkDO02wBf8BujR6l988+Xh5VAGt/8HQoAWUTlqwMe+DLYB9L85p8vy9cJpH2fAwWALGi2gPtdBWSu+DuyGAJpFz8oAGQprdOfBJ7p8dXTWS3+jiyFQBaKHxQAsgTb+fIErdObMB5c+oU8RZPLs1z8HVkIgawUP+iegNIjH111FbRuwewPwVdjvEKLH2LcS61xoL1xmB9pFWGWih8UAFJivu+cNbSGDuH8bsBhz7jc9g3vl8Dlvf1QAEipJRUCWSx+UACIxB4CWS1+UACIADH25m63zd7DLxM9/3wKAJFZMa0EQgvyzd+hABCZI+MhELT4QQEgcoaMhkDw4gcFgMiCMhYCsRQ/KABEFpWREIit+EGXAossKqafEvejp5/0RqEVgEgXKa0EYv3m71AAiPQg4RBIpPhBASDSs4RCILHiBwWASF9iDoFEix+0CSjSlxg3BmPf8FuIVgAiAwi8Ekj8m79DASAyoEAhkFrxgwJAJJKIIZBq8YMCQCSyAUMg9eIHbQKKRDZnY/DpHg95NY0Nv4UoAEQCsF3HjuKtTcA3u7z0efBrQtzMIwS1ACKB+d6Rq3HfinE5zpuAl3F+QoWvU1l+t91x9ETac+z4f+e4LCHrmLMuAAAAAElFTkSuQmCC" />
+                        </defs>
+                    </svg>
+                </div>
+                <p>Encontre a Trancista perfeita em apenas alguns cliques</p>
+            </div>
+            <div class="card2">
+                <i class='bx bx-id-card'></i>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Laborum vel neque eligendi, </p>
+            </div>
+            <div class="card3">
+                <i class='bx bxs-credit-card'></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+        <button class="botao">cadaste-se</button>
+        <img src="assets/imgs/Sem Título-1 1.png" alt="">
+    </section>
+    <section id="sobre">
+        <h1>Como <span>funciona</span></h1>
+        <div class="container_Sobre">
+            <div class="img-sobre">
+                <div class="img1"></div>
+                <div class="img2"></div>
+                <div class="img3"></div>
+                <div class="img4"></div>
+                <div class="img5"></div>
+                <div class="img6"></div>
+            </div>
+            <div class="apresentacao">
+                <div class="container">
+                    <div>
+                        <h3>Para Trancistas</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Voluptas cupiditate repellendus iure porro, earum mollitia nulla culpa voluptate! Dicta
+                            ab
+                            numquam
+                            maxime aliquam.
+                            Cum qui soluta eveniet quas. Corrupti, obcaecati?
+                        </p>
                     </div>
-                    <p>Encontre a Trancista perfeita em apenas alguns cliques</p>
-                </div>
-                <div class="card2">
-                    <i class='bx bx-id-card'></i>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Laborum vel neque eligendi, </p>
-                </div>
-                <div class="card3">
-                    <i class='bx bxs-credit-card'></i>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-            </div>
-            <button class="botao">cadaste-se</button>
-            <img src="assets/imgs/Sem Título-1 1.png" alt="">
-        </section>
-        <section id="sobre">
-            <h1>Como <span>funciona</span></h1>
-            <div class="container_Sobre">
-                <div class="img-sobre">
-                    <div class="img1"></div>
-                    <div class="img2"></div>
-                    <div class="img3"></div>
-                    <div class="img4"></div>
-                    <div class="img5"></div>
-                    <div class="img6"></div>
-                </div>
-                <div class="apresentacao">
-                    <div class="container">
-                        <div>
-                            <h3>Para Trancistas</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Voluptas cupiditate repellendus iure porro, earum mollitia nulla culpa voluptate! Dicta
-                                ab
-                                numquam
-                                maxime aliquam.
-                                Cum qui soluta eveniet quas. Corrupti, obcaecati?
-                            </p>
-                        </div>
-                        <div>
-                            <h3>Para clientes</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Voluptas cupiditate repellendus iure porro, earum mollitia nulla culpa voluptate! Dicta
-                                ab
-                                numquam
-                                maxime aliquam.
-                                Cum qui soluta eveniet quas. Corrupti, obcaecati?
-                            </p>
-                        </div>
-                        <button class="botao">cadaste-se</button>
+                    <div>
+                        <h3>Para clientes</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Voluptas cupiditate repellendus iure porro, earum mollitia nulla culpa voluptate! Dicta
+                            ab
+                            numquam
+                            maxime aliquam.
+                            Cum qui soluta eveniet quas. Corrupti, obcaecati?
+                        </p>
                     </div>
+                    <button class="botao">cadaste-se</button>
                 </div>
             </div>
-        </section>
-        <section id="perguntas">
-            <h2>Perguntas Frequentes: </h2>
-            <div class="container__cards">
-                <div class="card_perguntas">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Voluptatum debitis magnam incidunt sint dignissimos
-                    </p>
-                </div>
-
-                <div class="card_perguntas">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Voluptatum debitis magnam incidunt sint dignissimos
-                    </p>
-                </div>
-
-                <div class="card_perguntas">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Voluptatum debitis magnam incidunt sint dignissimos
-                    </p>
-                </div>
+        </div>
+    </section>
+    <section id="perguntas">
+        <h2>Perguntas Frequentes: </h2>
+        <div class="container__cards">
+            <div class="card_perguntas">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptatum debitis magnam incidunt sint dignissimos
+                </p>
             </div>
-        </section>
 
-        <footer>
-            <div class="logo-footer">
-                <img src="assets/imgs/logo2.png" alt="">
+            <div class="card_perguntas">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptatum debitis magnam incidunt sint dignissimos
+                </p>
             </div>
-            <ul>
-                <li><a href="#">login</a></li>
-                <li><a href="#">cuidados</a></li>
-            </ul>
-            <ul>
-                <li><a href="#">produtos</a></li>
-                <li><a href="#">contato</a></li>
-            </ul>
-            <ul>
-                <li><a href="#">sobre</a></li>
-                <li><a href="#">contato</a></li>
-            </ul>
-        </footer>
-    </main>
+
+            <div class="card_perguntas">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptatum debitis magnam incidunt sint dignissimos
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="logo-footer">
+            <img src="assets/imgs/logo2.png" alt="">
+        </div>
+        <ul>
+            <li><a href="#">login</a></li>
+            <li><a href="#">cuidados</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">produtos</a></li>
+            <li><a href="#">contato</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">sobre</a></li>
+            <li><a href="#">contato</a></li>
+        </ul>
+    </footer>
 </body>
 <script src="js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
 </html>
