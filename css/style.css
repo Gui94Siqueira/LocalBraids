@@ -26,9 +26,8 @@ header {
     margin-left: 4rem;
 }
 
-.logo h2 {
-    color: #724334;
-    font-family: 'Abril Fatface', serif;
+.logo img {
+    width: 200px;
 }
 
 header ul {
@@ -120,6 +119,7 @@ header ul {
     flex-wrap: wrap;
     gap: 30px;
     margin-top: 100px;
+    margin-bottom: 4rem;
 }
 
 .card1,
@@ -295,7 +295,10 @@ header ul {
 
 .card_perguntas {
     width: 250PX;
-    height: auto;
+    height: 150PX;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 2px solid #ff7b00;
     border-radius: 10px;
 }
@@ -308,14 +311,16 @@ header ul {
     color: #ff7b00;
     padding: 10px 20px;
     text-align: center;
+    font-size: larger;
 }
 
 #login {
     width: 100%;
     min-height: calc(100vh - 160px);
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 #login h2 {
@@ -422,7 +427,7 @@ footer li a:hover {
 .logo-footer img {
     width: 150px;
     margin-bottom: 20px;
-
+    margin-left: 4rem;
 }
 
 @media screen and (max-width: 955px) {
@@ -519,6 +524,7 @@ footer li a:hover {
 
     .container__cards {
         flex-wrap: wrap;
+        margin-bottom: 40px;
     }
   }
   @media screen and (max-width: 763px) {
