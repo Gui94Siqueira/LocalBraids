@@ -136,10 +136,11 @@ header ul {
 .cards p {
     font-size: 1.6rem;
     color: #ff7b00;
+    text-align: center;
 }
 
 .cards i {
-    font-size: 7rem;
+    font-size: 6.7rem;
     text-align: center;
     color: #ff7b00;
     margin-top: 25px;
@@ -541,7 +542,16 @@ footer li a:hover {
         font-size: 1rem;
         padding: 5px 10px;
     }
+    .logo-footer {
+        width: 40%;
+        justify-content: center;
   }
+
+  .logo-footer img {
+    margin-left: 0;
+  }
+
+}
 
   @media screen and (max-width: 550px) {
     #btn-responsivo {
@@ -601,11 +611,7 @@ footer li a:hover {
         text-align: center;
     }
 
-    .logo-footer {
-        width: 90%;
-        justify-content: center;
-        margin-left: 20px;
-    }
+    
   }
 
   @media screen and (max-width: 366px) {
