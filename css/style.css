@@ -86,7 +86,8 @@ header ul {
     margin-right: 2rem;
 }
 
-.containerSlogan h1 {
+
+.containerSlogan h2 {
     color: #fff;
     font-size: 3rem;
     font-weight: 400;
@@ -267,7 +268,7 @@ header ul {
 .apresentacao {
     width: 70%;
     margin-right: 50px;
-    margin-left: 4rem;
+    margin-left: 4.8rem;
 }
 
 .apresentacao p {
